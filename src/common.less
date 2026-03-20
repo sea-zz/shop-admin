@@ -1,0 +1,60 @@
+// margin,padding快捷类名设置样式
+.mp(@i) when(@i <=72) {
+  .m@{i} {
+    margin: @i * 1px;
+  }
+
+  .mr@{i} {
+    margin-right: @i * 1px;
+  }
+
+  .ml@{i} {
+    margin-left: @i * 1px;
+  }
+
+  .mt@{i} {
+    margin-top: @i * 1px;
+  }
+
+  .mb@{i} {
+    margin-bottom: @i * 1px;
+  }
+
+  .p@{i} {
+    padding: @i * 1px;
+  }
+
+  .pr@{i} {
+    padding-right: @i * 1px;
+  }
+
+  .pl@{i} {
+    padding-left: @i * 1px;
+  }
+
+  .pt@{i} {
+    padding-top: @i * 1px;
+  }
+
+  .pb@{i} {
+    padding-bottom: @i * 1px;
+  }
+
+  .mp((@i + 2));
+}
+
+.mp(2);
+
+.ft(@i) when(@i <=100) {
+  .ft@{i} {
+    font-size: @i * 1px;
+  }
+
+  .ft((@i + 2));
+}
+
+.ft(2);
+
+.color-gray-light {
+  color: #ccc;
+}
