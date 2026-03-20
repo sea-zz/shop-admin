@@ -1,5 +1,5 @@
 [[redirects]]
   from = "/api/*"
-  to = 'http://ceshi13.dishait.cn'
+  to = 'http://ceshi13.dishait.cn/:splat'
   status = 200
   force = true
