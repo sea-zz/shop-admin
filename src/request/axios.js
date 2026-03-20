@@ -3,7 +3,8 @@ import { getCookie, LOGIN_TOKEN } from '@/common/utils/cookie';
 import { ElNotification } from 'element-plus';
 
 const axiosInstance = axios.create({
-  baseURL: import.meta.env.VITE_APP_BASE_API
+  baseURL: '/api'
+  // baseURL: import.meta.env.VITE_APP_BASE_API
 });
 
 axiosInstance.interceptors.request.use(config => {
